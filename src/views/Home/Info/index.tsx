@@ -1,6 +1,6 @@
 import { HandWaving, PaperPlaneTilt } from "phosphor-react";
 
-export function Data() {
+export function Info() {
   return (
     <div className="data-container">
       <h1>

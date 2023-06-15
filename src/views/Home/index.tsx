@@ -1,4 +1,4 @@
-import { Data } from "./Data";
+import { Info } from "./Info";
 import { Social } from "./Social";
 
 import { HomeContainer } from "./styles";
@@ -14,7 +14,7 @@ export function Home() {
           <div className="home-img">
           </div>
 
-          <Data />
+          <Info />
         </div>
 
         <ScrollDown />
