@@ -42,7 +42,7 @@ export const HeaderContainer = styled.header`
 
           &.active {
             font-weight: ${({theme}) => theme.text.weight.max};
-            color: ${({theme}) => theme.colors.title};
+            color: ${({theme}) => theme.colors.main};
 
             &::before {
               content: '';
@@ -114,6 +114,25 @@ export const HeaderContainer = styled.header`
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 2rem;
+
+          .nav-link {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: ${({theme}) => theme.text.size.small};
+            color: ${({theme}) => theme.colors.text};
+            font-weight: ${({theme}) => theme.text.weight.middle};
+            transition: .3s; 
+
+            &.active {
+              color: ${({theme}) => theme.colors.main};
+
+              &::before {
+                display: none;
+              }
+            }
+          }
         }
 
         .nav-close {
@@ -125,7 +144,7 @@ export const HeaderContainer = styled.header`
           color: ${({theme}) => theme.colors.title};
 
           &:hover {
-            color: ${({theme}) => theme.effects.hoverLight(theme.colors.main)};
+            color: ${({theme}) => theme.effects.hoverLight(theme.colors.title)};
           }
         }
       }

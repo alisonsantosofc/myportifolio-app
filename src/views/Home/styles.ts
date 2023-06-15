@@ -105,8 +105,12 @@ export const HomeContainer = styled.section`
 
   .scrolldown-container {
     .scrolldown-button {
+      display: flex;
+      align-items: center;
+
       .mouse-simple {
         font-size: 2.5rem;
+        margin-bottom: 0.3rem;
         animation: scroll 2s ease infinite;
       }
 
