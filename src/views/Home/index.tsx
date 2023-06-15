@@ -1,8 +1,6 @@
 import { Data } from "./Data";
 import { Social } from "./Social";
 
-import avatarImg from "../../assets/avatar.jpg";
-
 import { HomeContainer } from "./styles";
 import { ScrollDown } from "./ScrollDown";
 
