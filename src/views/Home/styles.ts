@@ -81,6 +81,7 @@ export const HomeContainer = styled.section`
       height: 300px;
       order: 1;
       justify-self: center;
+      border-radius: 100%;
       box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
       animation: avatar__animate 8s ease-in-out infinite 1s;
     }
