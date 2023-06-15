@@ -98,30 +98,6 @@ export const GlobalStyles = createGlobalStyle`
     gap: 1.5rem;
   }
 
-  /*=== Buttons ===*/
-  .button {
-    display: inline-block;
-    background-color: ${({theme}) => theme.colors.title};
-    color: ${({theme}) => theme.colors.textContrast};
-    padding: 1.25rem 2rem;
-    border-radius: 1rem;
-    font-weight: ${({theme}) => theme.text.weight.middle};
-    transition: .3s;
-
-    &:hover {
-      background-color: ${({theme}) => darken(0.1, theme.colors.title)};
-    }
-  }
-
-  .button-icon {
-    margin-left: 0.5rem;
-  }
-
-  .button-flex {
-    display: inline-flex;
-    align-items: center;
-  }
-
   /*=== Breakpoints ===*/
   /* For large devices */
   @media screen and (max-width: 992px) {

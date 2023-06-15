@@ -1,8 +1,13 @@
 import { HandWaving, PaperPlaneTilt } from "phosphor-react";
+import { Button } from "../../../components/Button";
+import { useDarkMode } from "../../../hooks/useDarkMode";
+import { darkTheme, lightTheme } from "../../../styles/themes";
 
 export function Info() {
+  const { darkMode } = useDarkMode();
+
   return (
-    <div className="data-container">
+    <div className="info-container">
       <h1>
         Alison Santos
         <HandWaving />
@@ -11,10 +16,14 @@ export function Info() {
       <p>
         Enthusiast of the best web and mobile development technologies.
       </p>
-      <a href="#contact" className="button button-flex">
-        Talk to me
-        <PaperPlaneTilt />
-      </a>
+      <Button 
+        icon={<PaperPlaneTilt />} 
+        bg={!darkMode ? lightTheme.colors.main : darkTheme.colors.main}
+      >
+        <a href="#contact">
+          Talk to me
+        </a>
+      </Button>
     </div>
   )
 }

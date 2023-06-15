@@ -8,12 +8,12 @@ interface ToggleDarkModeContainerProps extends HtmlHTMLAttributes<HTMLDivElement
 export const ToggleDarkModeContainer = styled.div<ToggleDarkModeContainerProps>`
   label {
     position: absolute;
-    width: ${({width}) => width === 'small' ? '48px' : '64px'};
-    height: ${({width}) => width === 'small' ? '24px' : '32px'};
+    width: ${({width}) => width === 'small' ? '1.5rem' : '1rem'};
+    height: ${({width}) => width === 'small' ? '1.5rem' : '1rem'};
     background-color: ${({theme}) => theme.colors.text};
     border-radius: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     cursor: pointer;
     overflow: hidden ;
@@ -26,19 +26,19 @@ export const ToggleDarkModeContainer = styled.div<ToggleDarkModeContainerProps>`
   svg {
     &.sun-icon {
       position: absolute;
-      left: -2rem;
+      left: 4%;
       font-size: ${({width}) => width === 'small' ? '1rem' : '1.5rem'};
       color: ${({theme}) => theme.colors.textContrast};
       margin: 0 0.2rem;
-      transition: all 1s;
+      transition: .3s;
     }
 
     &.moon-icon {
       position: absolute;
-      right: -1.9rem;
-      font-size: ${({width}) => width === 'small' ? '0.9rem' : '1.4rem'};
+      right: 15%;
+      font-size: ${({width}) => width === 'small' ? '1rem' : '1.5rem'};
       color: ${({theme}) => theme.colors.textContrast};
-      transition: all 1s;
+      transition: .3s;
     }
   }
 

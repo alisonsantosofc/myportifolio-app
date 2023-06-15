@@ -1,16 +1,27 @@
 import { Briefcase, Flask, House, Image, PaperPlaneTilt, SquaresFour, User, X } from "phosphor-react";
 import { HeaderContainer } from "./styles";
 import { useState } from "react";
+import { ToggleDarkMode } from "../ToggleDarkMode";
+import { useDarkMode } from "../../hooks/useDarkMode";
 
 export function Header() {
+  const {darkMode, handleSetDarkMode} = useDarkMode();
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   return (
     <HeaderContainer>
       <nav className="container">
-        <a href="index.html" className="nav-logo">
-          Alison Web Developer
-        </a>
+        <div className="nav-logo">
+          <a href="index.html" className="logo-link">
+            Alison Web Developer
+          </a>
+          <ToggleDarkMode 
+            darkMode={darkMode} 
+            onHandleDarkMode={() => handleSetDarkMode()}
+            width="small"
+          />
+        </div>
+        
 
         <div className={`nav-menu ${isOpenMenu ? 'show' : ''}`}>
           <ul className="grid">

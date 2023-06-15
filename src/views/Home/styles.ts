@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { darken } from "polished";
+import { lighten } from "polished";
 
 import avatarImg from "../../assets/avatar.jpg";
 
@@ -21,16 +21,16 @@ export const HomeContainer = styled.section`
 
       .social-icon {
         font-size: 1.8rem;
-        color: ${({theme}) => theme.colors.title};
+        color: ${({theme}) => theme.colors.main};
         transition: .3s;
 
         &:hover {
-          color: ${({theme}) => darken(0.1, theme.colors.title)};
+          color: ${({theme}) => theme.effects.hoverLight(theme.colors.main)};
         }
       }
     }
 
-    .data-container {
+    .info-container {
       h1 {
         font-size: ${({theme}) => theme.text.size.big};
         margin-bottom: .25rem;
@@ -38,6 +38,7 @@ export const HomeContainer = styled.section`
         svg {
           font-size: 2.5rem;
           margin-left: .5rem;
+          color: ${({theme}) => theme.colors.main};
         }
       }
 
@@ -64,12 +65,12 @@ export const HomeContainer = styled.section`
         margin-bottom: 3rem;
       }
 
-      a {
+      /* a {
         svg {
           font-size: 1.3rem;
           margin-left: .5rem;
         }
-      }
+      } */
     }
 
     .home-img {
@@ -144,7 +145,7 @@ export const HomeContainer = styled.section`
       grid-template-columns: 100px repeat(2, 1fr);
       column-gap: 1.25rem;
 
-      .data-container {
+      .info-container {
         h1 {
           svg {
             font-size: 2rem;
@@ -194,7 +195,7 @@ export const HomeContainer = styled.section`
         box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
       }
 
-      .data-container {
+      .info-container {
         grid-column: 1/3;
       }
     }
@@ -215,7 +216,7 @@ export const HomeContainer = styled.section`
         height: 180px;
       }
 
-      .data-container {
+      .info-container {
         h1 {
           font-size: ${({theme}) => theme.text.size.title};
 

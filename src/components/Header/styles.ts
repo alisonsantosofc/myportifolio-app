@@ -1,4 +1,3 @@
-import { darken } from "polished";
 import { styled } from "styled-components";
 
 export const HeaderContainer = styled.header`
@@ -15,10 +14,15 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
     align-items: center;
     column-gap: 1rem;
-    
+
     .nav-logo {
-      font-size: ${({theme}) => theme.text.size.medium};
-      font-weight: ${({theme}) => theme.text.weight.middle};
+      display: flex;
+
+      a {
+        font-size: ${({theme}) => theme.text.size.medium};
+        font-weight: ${({theme}) => theme.text.weight.middle};
+        margin-right: 0.5rem;
+      }
     }
 
     .nav-menu {
@@ -27,6 +31,7 @@ export const HeaderContainer = styled.header`
         column-gap: 2rem;
 
         .nav-link {
+          position: relative;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -38,10 +43,20 @@ export const HeaderContainer = styled.header`
           &.active {
             font-weight: ${({theme}) => theme.text.weight.max};
             color: ${({theme}) => theme.colors.title};
+
+            &::before {
+              content: '';
+              position: absolute;
+              bottom: -0.1rem;
+              right: 0;
+              width: 80%;
+              height: 2px;
+              background-color: ${({theme}) => theme.colors.main};
+            }
           }
 
           &:hover {
-            color: ${({theme}) => theme.colors.title};
+            color: ${({theme}) => theme.effects.hoverLight(theme.colors.title)};
           }
 
           svg {
@@ -75,7 +90,9 @@ export const HeaderContainer = styled.header`
       height: 3rem;
 
       .nav-logo {
-        font-size: 1rem;
+        a {
+          font-size: 1rem;
+        }
       }
 
       .nav-menu {
@@ -108,7 +125,7 @@ export const HeaderContainer = styled.header`
           color: ${({theme}) => theme.colors.title};
 
           &:hover {
-            color: ${({theme}) => darken(0.1, theme.colors.title)};
+            color: ${({theme}) => theme.effects.hoverLight(theme.colors.main)};
           }
         }
       }
