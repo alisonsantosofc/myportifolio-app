@@ -7,6 +7,7 @@ import { useDarkMode } from "./hooks/useDarkMode";
 
 import { GlobalStyles } from "./styles/global";
 import { darkTheme, lightTheme } from "./styles/themes";
+import About from "./views/About";
 
 export function App() {
   const { darkMode } = useDarkMode();
@@ -15,8 +16,9 @@ export function App() {
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Header />
 
-      <main>
+      <main className="app-main">
         <Home />
+        <About />
       </main>
 
       <GlobalStyles />

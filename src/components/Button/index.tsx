@@ -5,13 +5,12 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   color?: string;
   typed?: "success" | "warning" | "info" | "error" | "transparent";
   size?: "small" | "normal" | "large";
-  bg?: string;
   icon?: ReactNode;
 }
 
-export function Button({ children, color, typed, size, bg, icon, ...props }: ButtonProps) {
+export function Button({ children, color, typed, size, icon, ...props }: ButtonProps) {
   return (
-    <StyledButton size={size} color={color} typed={typed} bg={bg} {...props}>
+    <StyledButton size={size} color={color} typed={typed} {...props}>
       {children}
       {icon}
     </StyledButton>

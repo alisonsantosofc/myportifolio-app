@@ -5,7 +5,7 @@ export function ScrollDown() {
     <div className="scrolldown-container">
       <a href="#about" className="scrolldown-button">
         <MouseSimple className="mouse-simple" />
-        <span>Scroll Down</span>
+        <span>Rolar para baixo</span>
         <ArrowCircleDown className="arrow-down" />
       </a>
     </div>

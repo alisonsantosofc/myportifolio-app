@@ -27,32 +27,32 @@ export function Header() {
           <ul className="grid">
             <li>
               <a href="#home" className="nav-link active">
-                <House /> Home
+                <House /> Início
               </a>
             </li>
             <li>
               <a href="#about" className="nav-link">
-                <User /> About
+                <User /> Sobre
               </a>
             </li>
             <li>
               <a href="#skills" className="nav-link">
-                <Flask /> Skills
+                <Flask /> Habilidades
               </a>
             </li>
             <li>
               <a href="#services" className="nav-link">
-                <Briefcase /> Services
+                <Briefcase /> Serviços
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="nav-link">
-                <Image /> Portfolio
+              <a href="#projects" className="nav-link">
+                <Image /> Projetos
               </a>
             </li>
             <li>
               <a href="#contact" className="nav-link">
-                <PaperPlaneTilt /> Contact
+                <PaperPlaneTilt /> Contato
               </a>
             </li>
           </ul>

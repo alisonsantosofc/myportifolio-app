@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
 
-export const StyledAbout = styled.section`
+export const StyledDefault = styled.section`
   
 `;

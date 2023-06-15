@@ -5,7 +5,6 @@ interface StyledButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   color?: string;
   typed?: "success" | "warning" | "info" | "error" | "transparent";
   size?: "small" | "normal" | "large";
-  bg?: string;
 }
 
 export const StyledButton = styled.button<StyledButtonProps>`
@@ -18,7 +17,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
   font-size: 1rem;
   font-weight: 500;
   transition: .3s;
-  background: ${({theme, typed, bg}) => typed === "success"
+  background: ${({theme, typed}) => typed === "success"
     ? theme.colors.green500
     : typed === "warning"
     ? theme.colors.orange500
@@ -27,8 +26,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
     : typed === "error"
     ? theme.colors.red500
     : typed === "transparent"
-    ? theme.colors.bodyBg
-    : bg
+    && theme.colors.bodyBg
   };
 
   color: ${props => props.typed === "transparent" && props.theme.colors.text};
@@ -45,18 +43,17 @@ export const StyledButton = styled.button<StyledButtonProps>`
   }
 
   &:hover {
-    background: ${({theme, typed, bg}) => typed === "success"
-    ? theme.effects.hoverLight(theme.colors.green500)
-    : typed === "warning"
-    ? theme.effects.hoverLight(theme.colors.orange500)
-    : typed === "info"
-    ? theme.effects.hoverLight(theme.colors.blue500)
-    : typed === "error"
-    ? theme.effects.hoverLight(theme.colors.red500)
-    : typed === "transparent"
-    ? theme.effects.hoverLight(theme.colors.bodyBg)
-    : theme.effects.hoverLight((bg as string))
-  };
+    background: ${({theme, typed}) => typed === "success"
+      ? theme.effects.hoverLight(theme.colors.green500)
+      : typed === "warning"
+      ? theme.effects.hoverLight(theme.colors.orange500)
+      : typed === "info"
+      ? theme.effects.hoverLight(theme.colors.blue500)
+      : typed === "error"
+      ? theme.effects.hoverLight(theme.colors.red500)
+      : typed === "transparent"
+      && theme.effects.hoverLight(theme.colors.bodyBg)
+    };
   }
 
   svg {

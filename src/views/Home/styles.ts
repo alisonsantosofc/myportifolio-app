@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 import avatarImg from "../../assets/avatar.jpg";
 
-export const HomeContainer = styled.section`
+export const StyledHome = styled.section`
   .home-container {
     row-gap: 7rem;
   }
@@ -47,6 +47,14 @@ export const HomeContainer = styled.section`
       p {
         max-width: 400px;
         margin-bottom: 3rem;
+      }
+
+      button {
+        background: ${({theme}) => theme.colors.main};
+
+        &:hover {
+          background: ${({theme}) => theme.effects.hoverLight(theme.colors.main)};
+        }
       }
     }
 
