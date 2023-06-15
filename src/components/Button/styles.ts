@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { ButtonHTMLAttributes } from "react";
-import { lighten } from "polished";
 
 interface StyledButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   color?: string;
