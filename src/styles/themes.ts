@@ -3,7 +3,7 @@ import { darken, lighten } from "polished";
 export const lightTheme = {
   colors: {
     // variables
-    main: '#7b6441', // #f13658 #366ef1 #02878e #408c32 #7b6441
+    main: '#7b6441',
     second: '#2165c5',
     title: '#191a1c',
     titleContrast: '#d6dbe5',
