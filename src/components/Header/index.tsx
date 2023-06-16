@@ -13,7 +13,7 @@ export function Header() {
       <nav className="container">
         <div className="nav-logo">
           <a href="index.html" className="logo-link">
-            Alison Web Developer
+            Alison Santos
           </a>
           <ToggleDarkMode 
             darkMode={darkMode} 

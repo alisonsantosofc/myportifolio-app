@@ -62,7 +62,7 @@ export const lightTheme = {
 export const darkTheme = {
   colors: {
     // variables
-    main: '#a38861',
+    main: '#ae8f64',
     second: '#4b95fd',
     title: '#e6ebf6',
     titleContrast: '#191a1c',
