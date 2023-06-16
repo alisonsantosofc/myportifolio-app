@@ -9,6 +9,7 @@ import { GlobalStyles } from "./styles/global";
 import { darkTheme, lightTheme } from "./styles/themes";
 import About from "./views/About";
 import Skills from "./views/Skills";
+import Services from "./views/Services";
 
 export function App() {
   const { darkMode } = useDarkMode();
@@ -21,6 +22,7 @@ export function App() {
         <Home />
         <About />
         <Skills />
+        <Services />
       </main>
 
       <GlobalStyles />

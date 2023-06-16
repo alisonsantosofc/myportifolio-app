@@ -1,4 +1,4 @@
-import { CheckCircle, Headset, Medal } from "phosphor-react"
+import { Headset, SealCheck, Medal } from "@phosphor-icons/react";
 
 export function AboutInfo() {
   return (
@@ -12,7 +12,7 @@ export function AboutInfo() {
       </div>
 
       <div className="about-box">
-        <CheckCircle />
+        <SealCheck />
         <div>
           <h3>Finalizados</h3>
           <p>mais de <span>4</span> projetos</p>
