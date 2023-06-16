@@ -1,7 +1,7 @@
 import { Backend } from "./Backend";
 import { Frontend } from "./Frontend";
 import { Mobile } from "./Mobile";
-import { UxUi } from "./UxUi";
+import { UiUx } from "./UiUx";
 
 import { StyledSkills } from "./styles";
 
@@ -15,7 +15,7 @@ export default function Skills() {
         <Frontend />
         <Backend />
         <Mobile />
-        <UxUi />
+        <UiUx />
       </div>
     </StyledSkills>
   )

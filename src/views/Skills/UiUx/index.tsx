@@ -1,9 +1,9 @@
 import { SiFigma } from "react-icons/si";
 
-export function UxUi() {
+export function UiUx() {
   return (
     <div className="skills-content">
-      <h2>UX/UI</h2>
+      <h2>UI/UX</h2>
 
       <div className="skills-box">
         <div className="skills-group">
