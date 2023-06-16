@@ -42,7 +42,7 @@ export const HeaderContainer = styled.header`
 
           &.active {
             font-weight: ${({theme}) => theme.text.weight.max};
-            color: ${({theme}) => theme.colors.main};
+            color: ${({theme}) => theme.colors.main500};
 
             &::before {
               content: '';
@@ -51,7 +51,7 @@ export const HeaderContainer = styled.header`
               right: 0;
               width: 80%;
               height: 2px;
-              background-color: ${({theme}) => theme.colors.main};
+              background-color: ${({theme}) => theme.colors.main500};
             }
           }
 
@@ -126,7 +126,7 @@ export const HeaderContainer = styled.header`
             transition: .3s; 
 
             &.active {
-              color: ${({theme}) => theme.colors.main};
+              color: ${({theme}) => theme.colors.main500};
 
               &::before {
                 display: none;

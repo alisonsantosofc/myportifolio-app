@@ -3,7 +3,8 @@ import { darken, lighten } from "polished";
 export const lightTheme = {
   colors: {
     // variables
-    main: '#7b6441',
+    main300: '#b8986a',
+    main500: '#836c4b',
     second: '#2165c5',
     title: '#191a1c',
     titleContrast: '#d6dbe5',
@@ -13,6 +14,7 @@ export const lightTheme = {
     // backgrounds
     bodyBg: '#d8dfee',
     containerBg: '#e3eaf8',
+    fadeBg: 'rgba(30, 30, 30, 0.3)',
 
     // colors
     white: '#fff',
@@ -62,7 +64,8 @@ export const lightTheme = {
 export const darkTheme = {
   colors: {
     // variables
-    main: '#ae8f64',
+    main300: '#d0aa76',
+    main500: '#ae8f64',
     second: '#4b95fd',
     title: '#e6ebf6',
     titleContrast: '#191a1c',
@@ -72,6 +75,7 @@ export const darkTheme = {
     // backgrounds
     bodyBg: '#131416',
     containerBg: '#26282b',
+    fadeBg: 'rgba(10, 10, 10, 0.4)',
 
     // colors
     white: '#e8ecf8',

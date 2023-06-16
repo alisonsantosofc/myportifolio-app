@@ -1,7 +1,14 @@
-import { X, CheckCircle, Browsers } from "@phosphor-icons/react";
+import { X, CheckCircle, Browsers, CaretRight, Database, Layout } from "@phosphor-icons/react";
 import { StyledServices } from "./styles";
+import { useState } from "react";
 
 export default function Services() {
+  const [selectedTab, setSelectedTab] = useState(0);
+
+  function toggleTab(index: number) {
+    setSelectedTab(index);
+  }
+
   return (
     <StyledServices className="section" id="default">
       <h2 className="section-title">Serviços</h2>
@@ -12,48 +19,57 @@ export default function Services() {
           <div className="services-title">
             <Browsers />
             <h3>
-              Design de <br /> Produto
+              Desenvolvimento <br /> de Frontend
             </h3>
           </div>
 
-          <span className="services-button">
+          <span 
+            className="services-button"
+            onClick={() => toggleTab(1)}
+          >
             Veja mais
+            <CaretRight weight="bold"/>
           </span>
 
-          <div className="services-modal">
+          <div className={`services-modal ${selectedTab === 1 ? 'active' : ''}`}>
             <div className="services-modal-content">
-              <X />
+              <X onClick={() => toggleTab(0)} />
 
-              <h3></h3>
+              <h3>Desenvolvimento de Frontend</h3>
               <p>
                 Serviço com mais de 3 anos de experiência. Oferecendo 
                 um trabalho de qualidade para clientes e empresas.
               </p>
 
-              <ul>
+              <ul className="grid">
                 <li>
                   <CheckCircle />
-                  <p>Eu desenvolvo interfaces de usuário.</p>
+                  <p>Criação de interfaces de usuário atraentes e responsivas.</p>
                 </li>
 
                 <li>
                   <CheckCircle />
-                  <p>Desenvolvimento de páginas web.</p>
+                  <p>Implementação de designs e protótipos.</p>
                 </li>
 
                 <li>
                   <CheckCircle />
-                  <p>Eu crio interações de elemento ux.</p>
+                  <p>Construção de componentes modulares e reutilizáveis.</p>
                 </li>
 
                 <li>
                   <CheckCircle />
-                  <p>Posiciono a marca da sua empresa.</p>
+                  <p>Conexão com APIs para buscar e enviar dados.</p>
                 </li>
 
                 <li>
                   <CheckCircle />
-                  <p>Design e mockups de produtos para empresas.</p>
+                  <p>Utilização de bibliotecas e frameworks populares.</p>
+                </li>
+
+                <li>
+                  <CheckCircle />
+                  <p>Oferta de serviços de manutenção e suporte.</p>
                 </li>
               </ul>
             </div>
@@ -62,50 +78,54 @@ export default function Services() {
 
         <div className="services-content">
           <div className="services-title">
-            <Browsers />
+            <Layout />
             <h3>
-              Design de <br /> UI/UX
+              Design de UX/UI <br /> com Figma
             </h3>
           </div>
 
-          <span className="services-button">
+          <span 
+            className="services-button"
+            onClick={() => toggleTab(2)}
+          >
             Veja mais
+            <CaretRight weight="bold"/>
           </span>
 
-          <div className="services-modal">
+          <div className={`services-modal ${selectedTab === 2 ? 'active' : ''}`}>
             <div className="services-modal-content">
-              <X />
+              <X onClick={() => toggleTab(0)} />
 
-              <h3></h3>
+              <h3>Design de UX/UI com Figma</h3>
               <p>
-                Serviço com mais de 3 anos de experiência. Oferecendo 
-                um trabalho de qualidade para clientes e empresas.
+                Ofereço serviços de UX/UI com o Figma, proporcionando 
+                uma experiência de usuário excepcional e designs atraentes.
               </p>
 
-              <ul>
+              <ul className="grid">
                 <li>
                   <CheckCircle />
-                  <p>Eu desenvolvo interfaces de usuário.</p>
+                  <p>Criação de designs de interfaces de usuário atraentes.</p>
                 </li>
 
                 <li>
                   <CheckCircle />
-                  <p>Desenvolvimento de páginas web.</p>
+                  <p>Criação de protótipos interativos de alta fidelidade.</p>
                 </li>
 
                 <li>
                   <CheckCircle />
-                  <p>Eu crio interações de elemento ux.</p>
+                  <p>Adaptação de designs para diferentes dispositivos.</p>
                 </li>
 
                 <li>
                   <CheckCircle />
-                  <p>Posiciono a marca da sua empresa.</p>
+                  <p>Mapeamento e definição do fluxo de navegação da aplicação.</p>
                 </li>
 
                 <li>
                   <CheckCircle />
-                  <p>Design e mockups de produtos para empresas.</p>
+                  <p>Criação de wireframes e esboços de baixa fidelidade.</p>
                 </li>
               </ul>
             </div>
@@ -114,47 +134,60 @@ export default function Services() {
 
         <div className="services-content">
           <div className="services-title">
-            <h3></h3>
+            <Database />
+            <h3>
+              Desenvolvimento<br />de APIs Node.js
+            </h3>
           </div>
 
-          <span className="services-button">
+          <span 
+            className="services-button"
+            onClick={() => toggleTab(3)}
+          >
             Veja mais
+            <CaretRight weight="bold"/>
           </span>
 
-          <div className="services-modal">
+          <div className={`services-modal ${selectedTab === 3 ? 'active' : ''}`}>
             <div className="services-modal-content">
-              <X />
+              <X onClick={() => toggleTab(0)} />
 
-              <h3></h3>
+              <h3>Desenvolvimento de APIs Node.js</h3>
               <p>
-                Serviço com mais de 3 anos de experiência. Oferecendo 
-                um trabalho de qualidade para clientes e empresas.
+                Criação de APIs escaláveis e eficientes utilizando o 
+                Node.js para atender às necessidades específicas 
+                de cada projeto.
               </p>
 
-              <ul>
+              <ul className="grid">
                 <li>
                   <CheckCircle />
-                  <p>Eu desenvolvo interfaces de usuário.</p>
+                  <p>Design e modelagem de bancos de dados.</p>
                 </li>
 
                 <li>
                   <CheckCircle />
-                  <p>Desenvolvimento de páginas web.</p>
+                  <p>Implementação de sistemas de autenticação seguros.</p>
                 </li>
 
                 <li>
                   <CheckCircle />
-                  <p>Eu crio interações de elemento ux.</p>
+                  <p>Integração de APIs de terceiros.</p>
                 </li>
 
                 <li>
                   <CheckCircle />
-                  <p>Posiciono a marca da sua empresa.</p>
+                  <p>Análise e otimização do desempenho.</p>
                 </li>
 
                 <li>
                   <CheckCircle />
-                  <p>Design e mockups de produtos para empresas.</p>
+                  <p>Testes automatizados para garantir qualidade e estabilidade.</p>
+                </li>
+
+                <li>
+                  <CheckCircle />
+                  <p>Criação de documentação clara e abrangente.</p>
                 </li>
               </ul>
             </div>

@@ -23,7 +23,7 @@ export function AboutInfo() {
         <Headset />
         <div>
           <h3>Suporte</h3>
-          <p>online das <span>6h</span> ás <span>00h</span> por dia</p>
+          <p>online das <span>6h</span> ás <span>00h</span> todos os dias</p>
         </div>
       </div>
     </div>

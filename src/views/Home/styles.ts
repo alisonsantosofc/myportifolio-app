@@ -22,7 +22,7 @@ export const StyledHome = styled.section`
         svg {
           font-size: 2.5rem;
           margin-left: .5rem;
-          color: ${({theme}) => theme.colors.main};
+          color: ${({theme}) => theme.colors.main500};
         }
       }
 
@@ -50,10 +50,10 @@ export const StyledHome = styled.section`
       }
 
       button {
-        background: ${({theme}) => theme.colors.main};
+        background: ${({theme}) => theme.colors.main500};
 
         &:hover {
-          background: ${({theme}) => theme.effects.hoverLight(theme.colors.main)};
+          background: ${({theme}) => theme.effects.hoverLight(theme.colors.main500)};
         }
       }
     }
@@ -86,11 +86,11 @@ export const StyledHome = styled.section`
 
         .social-icon {
           font-size: 1.8rem;
-          color: ${({theme}) => theme.colors.main};
+          color: ${({theme}) => theme.colors.main500};
           transition: .3s;
 
           &:hover {
-            color: ${({theme}) => theme.effects.hoverLight(theme.colors.main)};
+            color: ${({theme}) => theme.effects.hoverLight(theme.colors.main500)};
           }
         }
       }
@@ -215,11 +215,11 @@ export const StyledHome = styled.section`
 
           .social-icon {
             font-size: 1.8rem;
-            color: ${({theme}) => theme.colors.main};
+            color: ${({theme}) => theme.colors.main500};
             transition: .3s;
 
             &:hover {
-              color: ${({theme}) => theme.effects.hoverLight(theme.colors.main)};
+              color: ${({theme}) => theme.effects.hoverLight(theme.colors.main500)};
             }
           }
         }

@@ -34,7 +34,7 @@ export const StyledSkills = styled.section`
     svg {
       font-size: 1.4rem;
       margin-right: 0.8rem;
-      color: ${({theme}) => theme.colors.main};
+      color: ${({theme}) => theme.colors.main500};
     }
 
     div {

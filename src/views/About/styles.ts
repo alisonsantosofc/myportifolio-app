@@ -23,7 +23,7 @@ export const StyledAbout = styled.section`
           width: 4.2rem;
           height: 5px;
           border-radius: 50%;
-          background: ${({theme}) => lighten(0.1, theme.colors.main)};
+          background: ${({theme}) => lighten(0.1, theme.colors.main500)};
           transform: rotate(90deg);
           
 
@@ -66,8 +66,8 @@ export const StyledAbout = styled.section`
           padding: 1rem 1.25rem;
 
           svg {
-            font-size: 2rem;
-            color: ${({theme}) => lighten(0.1, theme.colors.main)};
+            font-size: 2.5rem;
+            color: ${({theme}) => lighten(0.1, theme.colors.main500)};
           }
 
           div {
@@ -75,7 +75,7 @@ export const StyledAbout = styled.section`
               font-size: ${({theme}) => theme.text.size.small};
 
               span {
-                color: ${({theme}) => lighten(0.1, theme.colors.main)};
+                color: ${({theme}) => lighten(0.1, theme.colors.main500)};
                 font-size: ${({theme}) => theme.text.size.middle};
                 font-weight: ${({theme}) => theme.text.weight.middle};
               }
@@ -90,10 +90,10 @@ export const StyledAbout = styled.section`
       }
 
       button {
-        background: ${({theme}) => theme.colors.main};
+        background: ${({theme}) => theme.colors.main500};
 
         &:hover {
-          background: ${({theme}) => lighten(0.1, theme.colors.main)};
+          background: ${({theme}) => lighten(0.1, theme.colors.main500)};
         }
       }
     }
