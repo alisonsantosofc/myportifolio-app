@@ -104,14 +104,13 @@ export const GlobalStyles = createGlobalStyle`
       margin-left: 1.5rem;
       margin-right: 1.5rem;
     }
-
-    .button {
-      padding: 1rem 1.75rem;
-    }
   }
 
   /* For medium devices */
   @media screen and (max-width: 768px) {
+    body {
+      margin: 0 0 3rem 0;
+    }
     .section {
       padding: 2rem 0 4rem;
     }
