@@ -1,22 +1,14 @@
-import { File, FileArrowDown } from "phosphor-react";
-import { MdOutlineHorizontalRule } from "react-icons/md";
+import { FileArrowDown } from "phosphor-react";
 import { BsCup } from "react-icons/bs";
 
 import { Button } from "../../components/Button";
 import { AboutInfo } from "./Info";
 
-import aboutImg from "../../assets/about.jpg";
 import cv from "../../assets/curriculo.pdf";
 
 import { StyledAbout } from "./styles";
-import { CurvedSVG } from "../../components/SVGComponents/CurvedSVG";
-import { useDarkMode } from "../../hooks/useDarkMode";
-import { darkTheme, lightTheme } from "../../styles/themes";
-import { lighten } from "polished";
 
 export default function About() {
-  const { darkMode } = useDarkMode();
-
   return (
     <StyledAbout className="section" id="about">
       <h2 className="section-title">Sobre mim</h2>

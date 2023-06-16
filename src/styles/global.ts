@@ -112,7 +112,7 @@ export const GlobalStyles = createGlobalStyle`
       margin: 0 0 3rem 0;
     }
     .section {
-      padding: 2rem 0 4rem;
+      padding: 2rem 0 2rem;
     }
   }
 

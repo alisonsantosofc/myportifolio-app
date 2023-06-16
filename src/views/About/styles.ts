@@ -119,7 +119,7 @@ export const StyledAbout = styled.section`
     }
   }
 
-    /*=== Breakpoints ===*/
+  /*=== Breakpoints ===*/
   /* For large devices */
   @media screen and (max-width: 992px) {
     .about-container {
