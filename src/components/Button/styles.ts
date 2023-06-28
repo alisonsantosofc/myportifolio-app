@@ -34,6 +34,10 @@ export const StyledButton = styled.button<StyledButtonProps>`
 
   width: ${props => props.size === "large" ? '100%' : ''};
 
+  padding: ${props => props.size === "small" ? '0.75rem 1rem' : ''};
+  font-size: ${props => props.size === "small" ? '0.9rem' : ''};
+  border-radius: ${props => props.size === "small" ? '0.8rem' : ''};
+
   > * {
     color: ${props => props.color ? props.color : props.theme.colors.white};
   }
@@ -59,9 +63,5 @@ export const StyledButton = styled.button<StyledButtonProps>`
   svg {
     font-size: 1.4rem;
     margin-left: .6rem;
-  }
-
-  @media (max-width: 768px) {
-    padding: 1.25rem 2rem; 
   }
 `;
