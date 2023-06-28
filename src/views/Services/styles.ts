@@ -21,14 +21,14 @@ export const StyledServices = styled.section`
     }
 
     h3 {
-      font-size: ${({theme}) => theme.text.size.medium};
+      font-size: 1.2rem;
       margin-bottom: 1rem;
     }
   }
 
   .services-button {
     color: ${({theme}) => theme.colors.title};
-    font-size: ${({theme}) => theme.text.size.small};
+    font-size: 0.9rem;
     display: inline-flex;
     align-items: center;
     column-gap: 0.25rem;
@@ -92,13 +92,13 @@ export const StyledServices = styled.section`
 
     > h3 {
       text-align: center;
-      font-size: ${({theme}) => theme.text.size.medium};
+      font-size: 1.2rem;
       margin-bottom: 1rem;
     }
 
     > p {
       text-align: center;
-      font-size: ${({theme}) => theme.text.size.small};
+      font-size: 0.9rem;
       padding: 0 2rem;
       margin-bottom: 2rem;
     }
@@ -119,7 +119,7 @@ export const StyledServices = styled.section`
         }
 
         p {
-          font-size: ${({theme}) => theme.text.size.small};
+          font-size: 0.9rem;
         }
       }
     }

@@ -19,8 +19,8 @@ export const HeaderContainer = styled.header`
       display: flex;
 
       a {
-        font-size: ${({theme}) => theme.text.size.medium};
-        font-weight: ${({theme}) => theme.text.weight.middle};
+        font-size: 1.2rem;
+        font-weight: 1.1rem;
         margin-right: 0.5rem;
       }
     }
@@ -35,13 +35,13 @@ export const HeaderContainer = styled.header`
           display: flex;
           flex-direction: column;
           align-items: center;
-          font-size: ${({theme}) => theme.text.size.small};
+          font-size: 0.9rem;
           color: ${({theme}) => theme.colors.text};
-          font-weight: ${({theme}) => theme.text.weight.middle};
+          font-weight: 1.1rem;
           transition: .3s; 
 
           &.active {
-            font-weight: ${({theme}) => theme.text.weight.max};
+            font-weight: 700;
             color: ${({theme}) => theme.colors.main500};
 
             &::before {
@@ -120,9 +120,9 @@ export const HeaderContainer = styled.header`
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: ${({theme}) => theme.text.size.small};
+            font-size: 0.9rem;
             color: ${({theme}) => theme.colors.text};
-            font-weight: ${({theme}) => theme.text.weight.middle};
+            font-weight: 1.1rem;
             transition: .3s; 
 
             &.active {

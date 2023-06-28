@@ -26,7 +26,7 @@ export const GlobalStyles = createGlobalStyle`
   input,
   textarea {
     font-family: var(--font-family);
-    font-size: ${({theme}) => theme.text.size.normal};
+    font-size: 1.1rem;
   }
 
   body {
@@ -36,12 +36,12 @@ export const GlobalStyles = createGlobalStyle`
 
   h1 {
     color: ${({theme}) => theme.colors.title};
-    font-weight: ${({theme}) => theme.text.weight.medium};
+    font-weight: 600;
   }
 
   h2, h3 {
     color: ${({theme}) => theme.colors.title};
-    font-weight: ${({theme}) => theme.text.weight.middle};
+    font-weight: 500;
   }
 
   ul {
@@ -70,13 +70,13 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .section-title {
-    font-size: ${({theme}) => theme.text.size.title};
+    font-size: 2.25rem;
     color: ${({theme}) => theme.colors.title};
   }
 
   .section-subtitle {
     display: block;
-    font-size: ${({theme}) => theme.text.size.small};
+    font-size: 0.9rem;
     margin-bottom: 4rem;
   }
 

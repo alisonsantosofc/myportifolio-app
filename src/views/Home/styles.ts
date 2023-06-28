@@ -16,7 +16,7 @@ export const StyledHome = styled.section`
 
     .info-container {
       h1 {
-        font-size: ${({theme}) => theme.text.size.big};
+        font-size: 3rem;
         margin-bottom: .25rem;
 
         svg {
@@ -28,9 +28,9 @@ export const StyledHome = styled.section`
 
       h3 {
         position: relative;
-        font-size: ${({theme}) => theme.text.size.header};
+        font-size: 1.5rem;
         padding-left: 5.4rem;
-        font-weight: ${({theme}) => theme.text.weight.normal};
+        font-weight: 1rem;
         margin-bottom: 1rem;
 
         &::before {
@@ -124,7 +124,7 @@ export const StyledHome = styled.section`
 
       span {
         color: ${({theme}) => theme.colors.title};
-        font-weight: ${({theme}) => theme.text.weight.middle};
+        font-weight: 500;
         margin-right: .25rem;
         margin-left: .5rem;
       }
@@ -154,7 +154,7 @@ export const StyledHome = styled.section`
 
       .info-container {
         h1 {
-          font-size: ${({theme}) => theme.text.size.title};
+          font-size: 2.25rem;
           
           svg {
             font-size: 2rem;
@@ -162,7 +162,7 @@ export const StyledHome = styled.section`
         }
 
         h3 {
-          font-size: ${({theme}) => theme.text.size.medium};
+          font-size: 1.2rem;
           padding-left: 3.75rem;
           margin-bottom: 0.5rem;
 
@@ -246,7 +246,7 @@ export const StyledHome = styled.section`
 
       .info-container {
         h1 {
-          font-size: ${({theme}) => theme.text.size.title};
+          font-size: 2.25rem;
 
           svg {
             font-size: 1.8rem;

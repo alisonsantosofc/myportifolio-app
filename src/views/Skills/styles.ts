@@ -14,8 +14,8 @@ export const StyledSkills = styled.section`
     border-radius: 1.25rem;
 
     h2 {
-      font-size: ${({theme}) => theme.text.size.middle};
-      font-weight: ${({theme}) => theme.text.weight.middle};
+      font-size: 1.1rem;
+      font-weight: 500;
       text-align: center;
       margin-bottom: 1.5rem;
     }
@@ -39,13 +39,13 @@ export const StyledSkills = styled.section`
 
     div {
       h3 {
-        font-size: ${({theme}) => theme.text.size.small};
+        font-size: 0.9rem;
         margin-bottom: -.3rem;
         overflow: hidden;
       }
 
       span {
-        font-size: ${({theme}) => theme.text.size.smaller};
+        font-size: 0.8rem;
       }
     }
   }

@@ -72,12 +72,12 @@ export const StyledAbout = styled.section`
 
           div {
             p {
-              font-size: ${({theme}) => theme.text.size.small};
+              font-size: 0.9rem;
 
               span {
                 color: ${({theme}) => lighten(0.1, theme.colors.main500)};
-                font-size: ${({theme}) => theme.text.size.middle};
-                font-weight: ${({theme}) => theme.text.weight.middle};
+                font-size: 1.1rem;
+                font-weight: 500;
               }
             }
           }

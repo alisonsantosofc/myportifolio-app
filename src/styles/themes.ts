@@ -40,24 +40,6 @@ export const lightTheme = {
     hoverDark: (color: string) => {
       return darken(0.1, color)
     },
-  },
-  text: {
-    size: {
-      smaller: '0.8rem',
-      small: '0.9rem',
-      normal: '1rem',
-      middle: '1.1rem',
-      medium: '1.2rem',
-      header: '1.5rem',
-      title: '2.25rem',
-      big: '3rem',
-    },
-    weight: {
-      normal: 400,
-      middle: 500,
-      medium: 600,
-      max: 700,
-    }
   }
 };
 
@@ -101,25 +83,5 @@ export const darkTheme = {
     hoverDark: (color: string) => {
       return darken(0.1, color)
     },
-  },
-  text: {
-    // font size
-    size: {
-      smaller: '0.8rem',
-      small: '0.9rem',
-      normal: '1rem',
-      middle: '1.1rem',
-      medium: '1.2rem',
-      header: '1.5rem',
-      title: '2.25rem',
-      big: '3rem',
-    },
-    // font weight
-    weight: {
-      normal: 400,
-      middle: 500,
-      medium: 600,
-      max: 700,
-    }
   }
 };

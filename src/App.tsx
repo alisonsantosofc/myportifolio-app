@@ -10,6 +10,7 @@ import { darkTheme, lightTheme } from "./styles/themes";
 import About from "./views/About";
 import Skills from "./views/Skills";
 import Services from "./views/Services";
+import Qualification from "./views/Qualification";
 
 export function App() {
   const { darkMode } = useDarkMode();
@@ -23,6 +24,7 @@ export function App() {
         <About />
         <Skills />
         <Services />
+        <Qualification />
       </main>
 
       <GlobalStyles />
