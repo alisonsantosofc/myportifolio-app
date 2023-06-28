@@ -1,3 +1,6 @@
+import { FormEvent, useRef, useState } from 'react';
+import emailjs, {EmailJSResponseStatus} from '@emailjs/browser';
+
 import { CaretRight, EnvelopeSimple, PaperPlaneTilt, WhatsappLogo } from "@phosphor-icons/react";
 import { BsLinkedin } from "react-icons/bs";
 
@@ -7,7 +10,38 @@ import { Button } from "../../components/Button";
 
 import { StyledContact } from "./styles";
 
+
 export function Contact() {
+  const form = useRef<HTMLFormElement>(null);
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [projectDescription, setProjectDescription] = useState('');
+
+  const sendEmail = (e: FormEvent) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_i4lv4zc',
+        'template_u15b3jc',
+        // @ts-ignore: Unreachable code error
+        form.current,
+        'jhHr7J9gVYYXBdXrd'
+      )
+      .then(
+        (result: EmailJSResponseStatus) => {
+          setName('');
+          setEmail('');
+          setProjectDescription('');
+        },
+        (error: EmailJSResponseStatus) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+
   return (
     <StyledContact className="section" id="contact">
       <h2 className="section-title">Contate-me</h2>
@@ -71,11 +105,32 @@ export function Contact() {
         <div className="contact-content">
           <h3 className="contact-title">Fale do seu projeto</h3>
 
-          <form className="contact-form">
+          <form ref={form} onSubmit={sendEmail} className="contact-form">
             <div className="form-content">
-              <Input label="Nome" placeholder="Seu nome completo"/>
-              <Input label="Email" type="email" placeholder="Seu email preferido"/>
-              <Textarea label="Projeto" placeholder="Fale sobre seu projeto" cols={20} rows={6} />
+              <Input 
+                label="Nome" 
+                name='name' 
+                placeholder="Seu nome completo" 
+                value={name} 
+                onChange={(e) => setName(e.target.value)}
+              />
+              <Input 
+                label="Email" 
+                name='email' 
+                type="email" 
+                placeholder="Seu email preferido" 
+                value={email} 
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <Textarea 
+                label="Projeto" 
+                name='project' 
+                placeholder="Fale sobre seu projeto" 
+                cols={20} 
+                rows={6} 
+                value={projectDescription} 
+                onChange={(e) => setProjectDescription(e.target.value)} 
+              />
             </div>
 
             <div className="btn-container">
