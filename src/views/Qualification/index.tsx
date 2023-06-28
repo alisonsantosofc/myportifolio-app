@@ -3,7 +3,7 @@ import { CalendarBlank, CalendarCheck, Certificate, Student } from "@phosphor-ic
 import { StyledQualification } from "./styles";
 import { useState } from "react";
 
-export default function Qualification() {
+export function Qualification() {
   const [selectedTab, setSelectedTab] = useState(1);
 
   function toggleTab(index: number) {

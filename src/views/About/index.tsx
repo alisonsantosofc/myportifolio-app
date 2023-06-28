@@ -8,7 +8,7 @@ import cv from "../../assets/curriculo.pdf";
 
 import { StyledAbout } from "./styles";
 
-export default function About() {
+export function About() {
   return (
     <StyledAbout className="section" id="about">
       <h2 className="section-title">Sobre mim</h2>

@@ -2,7 +2,7 @@ import { X, CheckCircle, Browsers, CaretRight, Database, Layout } from "@phospho
 import { StyledServices } from "./styles";
 import { useState } from "react";
 
-export default function Services() {
+export function Services() {
   const [selectedTab, setSelectedTab] = useState(0);
 
   function toggleTab(index: number) {

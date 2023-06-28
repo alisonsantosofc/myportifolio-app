@@ -2,15 +2,16 @@ import { ThemeProvider } from "styled-components";
 
 import { Header } from "./components/Header";
 import { Home } from "./views/Home";
+import { About } from "./views/About";
+import { Skills } from "./views/Skills";
+import { Services } from "./views/Services";
+import { Qualification } from "./views/Qualification";
+import { Testimonials } from "./views/Testimonials";
 
 import { useDarkMode } from "./hooks/useDarkMode";
 
 import { GlobalStyles } from "./styles/global";
 import { darkTheme, lightTheme } from "./styles/themes";
-import About from "./views/About";
-import Skills from "./views/Skills";
-import Services from "./views/Services";
-import Qualification from "./views/Qualification";
 
 export function App() {
   const { darkMode } = useDarkMode();
@@ -25,6 +26,7 @@ export function App() {
         <Skills />
         <Services />
         <Qualification />
+        <Testimonials />
       </main>
 
       <GlobalStyles />

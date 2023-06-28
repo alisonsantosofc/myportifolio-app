@@ -8,7 +8,7 @@ export function HomeInfo() {
         Alison Santos
         <HandWaving />
       </h1>
-      <h3>Desenvolvedor Web</h3>
+      <h3>Desenvolvedor de Software</h3>
       <p>
         Entusiasta das melhores tecnologias de desenvolvimento web e mobile.
       </p>
