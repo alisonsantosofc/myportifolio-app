@@ -7,6 +7,7 @@ import { Skills } from "./views/Skills";
 import { Services } from "./views/Services";
 import { Qualification } from "./views/Qualification";
 import { Testimonials } from "./views/Testimonials";
+import { Contact } from "./views/Contact";
 
 import { useDarkMode } from "./hooks/useDarkMode";
 
@@ -27,6 +28,7 @@ export function App() {
         <Services />
         <Qualification />
         <Testimonials />
+        <Contact />
       </main>
 
       <GlobalStyles />

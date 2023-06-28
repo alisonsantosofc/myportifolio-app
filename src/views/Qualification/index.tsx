@@ -35,14 +35,33 @@ export function Qualification() {
 
         <div className="qualification-sections">
           <div className={`qualification-content ${selectedTab === 1 ? 'active' : ''}`}>
-            <div className="qualification-info left">
+            <div className="qualification-info">
+              <div></div>
+
+              <div>
+                <span className="qualification-rounder"></span>
+                <span className="qualification-line"></span>
+              </div>
+              
               <div className="qualification-title">
                 <h3>Análise e Desenvolvimento de Sistemas</h3>
                 <span>UNINASSAU</span>
 
                 <div className="qualification-calendar">
-                  <CalendarBlank />
+                  <CalendarCheck />
                   2022 - Presente
+                </div>
+              </div>
+            </div>
+            
+            <div className="qualification-info left">
+              <div className="qualification-title">
+                <h3>Discover</h3>
+                <span>Rocketseat</span>
+
+                <div className="qualification-calendar">
+                  <CalendarBlank />
+                  2021 - 2022
                 </div>
               </div>
 
@@ -145,23 +164,6 @@ export function Qualification() {
           </div>
 
           <div className={`qualification-content ${selectedTab === 2 ? 'active' : ''}`}>
-            <div className="qualification-info left">
-              <div className="qualification-title">
-                <h3>Desenvolvedor de Software Júnior</h3>
-                <span>Máquina de Lucro</span>
-
-                <div className="qualification-calendar">
-                  <CalendarCheck />
-                  2022 - 2022
-                </div>
-              </div>
-
-              <div>
-                <span className="qualification-rounder"></span>
-                <span className="qualification-line"></span>
-              </div>
-            </div>
-
             <div className="qualification-info">
               <div></div>
 
@@ -180,6 +182,25 @@ export function Qualification() {
                 </div>
               </div>
             </div>
+
+            <div className="qualification-info left">
+              <div className="qualification-title">
+                <h3>Desenvolvedor de Software Júnior</h3>
+                <span>Máquina de Lucro</span>
+
+                <div className="qualification-calendar">
+                  <CalendarCheck />
+                  2022 - 2022
+                </div>
+              </div>
+
+              <div>
+                <span className="qualification-rounder"></span>
+                <span className="qualification-line"></span>
+              </div>
+            </div>
+
+            
           </div>
         </div>
       </div>

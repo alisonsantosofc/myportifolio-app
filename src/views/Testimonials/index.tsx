@@ -53,9 +53,7 @@ export function Testimonials() {
             <h3>{'Deixe seu depoimento'}</h3>
             <p>{'Se você deseja deixar seu depoimento aqui entre em contato comigo.'}</p>
 
-            <div className="btn-container">
-              <Button size="small">Deixar depoimento</Button>
-            </div>
+            <Button size="small">Deixar depoimento</Button>
         </SwiperSlide>
       </Swiper>
     </StyledTestimonials>

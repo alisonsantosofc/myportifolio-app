@@ -21,10 +21,6 @@ export const StyledQualification = styled.section`
     margin: 0 1rem;
     cursor: pointer;
 
-    &.active {
-      color: ${({theme}) => theme.colors.main300};
-    }
-
     &:hover {
       color: ${({theme}) => theme.effects.hoverLight(theme.colors.title)};
     }

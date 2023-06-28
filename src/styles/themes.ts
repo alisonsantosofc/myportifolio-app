@@ -10,6 +10,7 @@ export const lightTheme = {
     titleContrast: '#d6dbe5',
     text: '#303336',
     textContrast: '#dfe4ef',
+    button: '#f1f5f9',
 
     // backgrounds
     bodyBg: '#d8dfee',
@@ -53,6 +54,7 @@ export const darkTheme = {
     titleContrast: '#191a1c',
     text: '#cdd2df',
     textContrast: '#212325',
+    button: '#26282b',
 
     // backgrounds
     bodyBg: '#131416',

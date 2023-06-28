@@ -8,17 +8,19 @@ export const StyledTestimonials = styled.section`
   }
 
   .testimonial-card {
+    position: relative;
     background-color: ${({theme}) => theme.colors.containerBg};
     box-shadow: ${({theme}) => theme.effects.shadowAround};
     padding: 1.5rem 2rem;
     margin-bottom: 3rem;
     border-radius: 1.5rem;
-    height: 256px;
     max-width: calc(100% - 3rem);
+    height: 256px;
 
     svg {
       width: 100px;
       height: 100px;
+      margin-bottom: 1rem;
     }
 
     img {
@@ -38,20 +40,17 @@ export const StyledTestimonials = styled.section`
       font-size: 0.9rem;
     }
 
-    .btn-container {
-      display: flex;
-      justify-content: flex-end;
-      margin-top: 1rem;
+    button {
+      position: absolute;
+      bottom: 1.5rem;
+      right: 2rem;
+      background-color: ${({theme}) => theme.colors.main500};
 
-      button {
-        background-color: ${({theme}) => theme.colors.main500};
-
-        &:hover {
-          background-color: ${({theme}) => theme.effects.hoverLight(theme.colors.main500)};
-        }
+      &:hover {
+        background-color: ${({theme}) => theme.effects.hoverLight(theme.colors.main500)};
       }
     }
-  }
+}
 
   /* Swiper class */
   .swiper-pagination-bullet {
@@ -59,7 +58,7 @@ export const StyledTestimonials = styled.section`
   }
 
   .swiper-pagination-bullet-active {
-    background-color: ${({theme}) => theme.colors.main300} !important;  
+    background-color: ${({theme}) => theme.colors.main500} !important;  
   }
 
   /*=== Breakpoints ===*/

@@ -13,7 +13,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
   padding: 1.25rem 2rem;
   border: none;
   border-radius: 1rem;
-  color: ${props => props.color ? props.color : props.theme.colors.white};
+  color: ${props => props.color ? props.color : props.theme.colors.button};
   font-size: 1rem;
   font-weight: 500;
   transition: .3s;
@@ -39,7 +39,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
   border-radius: ${props => props.size === "small" ? '0.8rem' : ''};
 
   > * {
-    color: ${props => props.color ? props.color : props.theme.colors.white};
+    color: ${props => props.color ? props.color : props.theme.colors.button};
   }
 
   > * {
