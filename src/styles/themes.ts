@@ -3,8 +3,8 @@ import { darken, lighten } from "polished";
 export const lightTheme = {
   colors: {
     // variables
-    main300: '#b8986a',
-    main500: '#836c4b',
+    main300: '#8f7b64',
+    main500: '#847054',
     second: '#2165c5',
     title: '#191a1c',
     titleContrast: '#d6dbe5',
@@ -46,8 +46,8 @@ export const lightTheme = {
 export const darkTheme = {
   colors: {
     // variables
-    main300: '#d0aa76',
-    main500: '#ae8f64',
+    main300: '#c0aa8b',
+    main500: '#ab9370',
     second: '#4b95fd',
     title: '#e6ebf6',
     titleContrast: '#191a1c',

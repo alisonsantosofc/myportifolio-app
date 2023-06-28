@@ -1,8 +1,15 @@
 import { CalendarBlank, CalendarCheck, Certificate, Student } from "@phosphor-icons/react";
 
 import { StyledQualification } from "./styles";
+import { useState } from "react";
 
 export default function Qualification() {
+  const [selectedTab, setSelectedTab] = useState(1);
+
+  function toggleTab(index: number) {
+    setSelectedTab(index);
+  }
+
   return (
     <StyledQualification className="section" id="qualification">
       <h2 className="section-title">Qualificações</h2>
@@ -10,19 +17,25 @@ export default function Qualification() {
 
       <div className="qualification-container container">
         <div className="qualification-tabs">
-          <div className="qualification-button active">
+          <div 
+            className={`qualification-button ${selectedTab === 1 ? 'active' : ''}`}
+            onClick={() => toggleTab(1)}
+          >
             <Student />
             Educação
           </div>
-          <div className="qualification-button">
+          <div 
+            className={`qualification-button ${selectedTab === 2 ? 'active' : ''}`}
+            onClick={() => toggleTab(2)}
+          >
             <Certificate />
             Experiência
           </div>
         </div>
 
         <div className="qualification-sections">
-          <div className="qualification-content active">
-            <div className="qualification-info">
+          <div className={`qualification-content ${selectedTab === 1 ? 'active' : ''}`}>
+            <div className="qualification-info left">
               <div className="qualification-title">
                 <h3>Análise e Desenvolvimento de Sistemas</h3>
                 <span>UNINASSAU</span>
@@ -58,7 +71,7 @@ export default function Qualification() {
               </div>
             </div>
 
-            <div className="qualification-info">
+            <div className="qualification-info left">
               <div className="qualification-title">
                 <h3>Algoritmo</h3>
                 <span>UNIASSELVI</span>
@@ -94,7 +107,7 @@ export default function Qualification() {
               </div>
             </div>
 
-            <div className="qualification-info">
+            <div className="qualification-info left">
               <div className="qualification-title">
                 <h3>HTML e CSS</h3>
                 <span>Fundação Bradesco</span>
@@ -131,8 +144,8 @@ export default function Qualification() {
             </div>
           </div>
 
-          <div className="qualification-content">
-            <div className="qualification-info">
+          <div className={`qualification-content ${selectedTab === 2 ? 'active' : ''}`}>
+            <div className="qualification-info left">
               <div className="qualification-title">
                 <h3>Desenvolvedor de Software Júnior</h3>
                 <span>Máquina de Lucro</span>

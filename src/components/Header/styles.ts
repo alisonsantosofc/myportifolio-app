@@ -31,7 +31,6 @@ export const HeaderContainer = styled.header`
         column-gap: 2rem;
 
         .nav-link {
-          position: relative;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -42,17 +41,7 @@ export const HeaderContainer = styled.header`
 
           &.active {
             font-weight: 700;
-            color: ${({theme}) => theme.colors.main500};
-
-            &::before {
-              content: '';
-              position: absolute;
-              bottom: -0.1rem;
-              right: 0;
-              width: 80%;
-              height: 2px;
-              background-color: ${({theme}) => theme.colors.main500};
-            }
+            color: ${({theme}) => theme.colors.main300};
           }
 
           &:hover {

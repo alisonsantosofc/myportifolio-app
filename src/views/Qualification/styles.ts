@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 export const StyledQualification = styled.section`
   .qualification-container {
     max-width: 768px;
+    padding-bottom: 4rem;
   }
 
   .qualification-tabs {
@@ -19,6 +20,10 @@ export const StyledQualification = styled.section`
     color: ${({theme}) => theme.colors.title};
     margin: 0 1rem;
     cursor: pointer;
+
+    &.active {
+      color: ${({theme}) => theme.colors.main300};
+    }
 
     &:hover {
       color: ${({theme}) => theme.effects.hoverLight(theme.colors.title)};
@@ -40,7 +45,9 @@ export const StyledQualification = styled.section`
     display: none;
 
     &.active {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -48,9 +55,90 @@ export const StyledQualification = styled.section`
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     column-gap: 1.5rem;
+    width: 80%;
+
+    &.left {
+      .qualification-title {
+        text-align: right;
+      }
+
+      .qualification-calendar {
+        justify-content: flex-end;
+      }
+    }
   }
 
   .qualification-title {
-    
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    span {
+      display: inline-block;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .qualification-calendar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .qualification-rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: ${({theme}) => theme.colors.text};
+    border-radius: 50%;
+  }
+
+  .qualification-line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: ${({theme}) => theme.colors.text};
+    transform: translate(6px, -7px);
+  }
+
+  /*=== Breakpoints ===*/
+  /* For large devices */
+  @media screen and (max-width: 992px) {
+    .qualification-container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    .qualification-container {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+
+    .qualification-info {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .qualifications-sections {
+      grid-template-columns: initial;
+    }
+
+    .qualification-button {
+      margin: 0 0.75rem;
+    }
+  }
+
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    .qualification-info {
+      gap: 0.5rem;
+    }
   }
 `;
