@@ -133,6 +133,20 @@ export const StyledQualification = styled.section`
     .qualification-button {
       margin: 0 0.75rem;
     }
+
+    .qualification-title {
+      h3 {
+        font-size: 1rem;
+      }
+
+      span {
+        font-size: 0.8rem;
+      }
+    }
+
+    .qualification-calendar {
+      font-size: 0.8rem;
+    }
   }
 
   /* For small devices */
