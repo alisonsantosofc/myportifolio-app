@@ -10,11 +10,13 @@ export const lightTheme = {
     titleContrast: '#d6dbe5',
     text: '#303336',
     textContrast: '#dfe4ef',
+    label: '#797e84',
     button: '#f1f5f9',
 
     // backgrounds
     bodyBg: '#d8dfee',
     containerBg: '#e3eaf8',
+    inputBg: '#ccd2df',
     fadeBg: 'rgba(30, 30, 30, 0.3)',
 
     // colors
@@ -54,11 +56,13 @@ export const darkTheme = {
     titleContrast: '#191a1c',
     text: '#cdd2df',
     textContrast: '#212325',
+    label: '#7e8188',
     button: '#26282b',
 
     // backgrounds
     bodyBg: '#131416',
     containerBg: '#26282b',
+    inputBg: '#3b3d41',
     fadeBg: 'rgba(10, 10, 10, 0.4)',
 
     // colors

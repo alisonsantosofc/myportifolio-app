@@ -72,6 +72,7 @@ export const GlobalStyles = createGlobalStyle`
   .section-title {
     font-size: 2.25rem;
     color: ${({theme}) => theme.colors.title};
+    font-weight: 600;
   }
 
   .section-subtitle {

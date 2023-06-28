@@ -211,7 +211,7 @@ export const StyledHome = styled.section`
           display: flex;
           flex-direction: column;
           order: 1;
-          gap: 2rem;
+          gap: 0.5rem;
 
           .social-icon {
             font-size: 1.8rem;
