@@ -20,9 +20,11 @@ export const StyledHome = styled.section`
         margin-bottom: .25rem;
 
         svg {
-          font-size: 2.5rem;
-          margin-left: .5rem;
+          font-size: 4rem;
+          margin-left: .8rem;
           color: ${({theme}) => theme.colors.main500};
+          animation: hand_animate 3s ease-in-out infinite;
+          animation-delay: 3s;
         }
       }
 
@@ -70,9 +72,9 @@ export const StyledHome = styled.section`
         width: 300px;
         height: 300px;
         justify-self: center;
-        border-radius: 100%;
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
         box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
-        animation: avatar__animate 8s ease-in-out infinite 1s;
+        animation: avatar_animate 8s ease-in-out infinite 1s;
       }
 
       .social-container {
@@ -95,20 +97,6 @@ export const StyledHome = styled.section`
         }
       }
     }
-
-    @keyframes avatar__animate {
-      0% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-      }
-
-      50% {
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-      }
-
-      100% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-      }
-    }
   }
 
   .scrolldown-container {
@@ -122,15 +110,32 @@ export const StyledHome = styled.section`
         animation: scroll 2s ease infinite;
       }
 
-      span {
+      .hand-tap {
+        display: none;
+        font-size: 2.5rem;
+        margin-bottom: 0.3rem;
+        animation: scroll 2s ease infinite;
+      }
+
+      p {
+        display: flex;
         color: ${({theme}) => theme.colors.title};
         font-weight: 500;
-        margin-right: .25rem;
+        font-size: 1rem;
+        margin-right: .5rem;
         margin-left: .5rem;
+
+        span {
+          margin-right: 0.2rem;
+        }
+
+        .move {
+          display: none;
+        }
       }
 
       .arrow-down {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
       }
     }
 
@@ -157,7 +162,7 @@ export const StyledHome = styled.section`
           font-size: 2.25rem;
           
           svg {
-            font-size: 2rem;
+            font-size: 3rem;
           }
         }
 
@@ -227,7 +232,31 @@ export const StyledHome = styled.section`
     }
 
     .scrolldown-container {
-      display: none;
+      margin-top: -4rem;
+      .scrolldown-button {
+        justify-content: flex-end;
+
+        .mouse-simple {
+          display: none;
+        }
+
+        .hand-tap {
+          display: block;
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+
+          .scroll {
+            display: none;
+          }
+
+          .move {
+            display: block;
+          }
+        }
+      }
     }
   }
 
@@ -247,12 +276,36 @@ export const StyledHome = styled.section`
       .info-container {
         h1 {
           font-size: 2.25rem;
-
-          svg {
-            font-size: 1.8rem;
-          }
         }
       }
     }
   }
+
+  @keyframes avatar_animate {
+      0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+      }
+
+      50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+      }
+
+      100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+      }
+    }
+
+    @keyframes hand_animate {
+      0% {
+        transform: rotate(0);
+      }
+
+      20% {
+        transform: rotate(25deg);
+      }
+
+      50% {
+        transform: rotate(0);
+      }
+    }
 `;

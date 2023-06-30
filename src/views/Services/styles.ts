@@ -147,7 +147,7 @@ export const StyledServices = styled.section`
   @media screen and (max-width: 576px) {
     .services-container {
       grid-template-columns: 1fr;
-      padding: 0 4rem;
+      padding: 0;
     }
     .services-modal-content {
       padding: 3.5rem 1.5rem 2.5rem;
