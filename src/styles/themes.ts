@@ -15,7 +15,7 @@ export const lightTheme = {
 
     // backgrounds
     bodyBg: '#d8dfee',
-    containerBg: '#e3eaf8',
+    containerBg: '#e6ecf9',
     inputBg: '#ccd2df',
     fadeBg: 'rgba(30, 30, 30, 0.3)',
 

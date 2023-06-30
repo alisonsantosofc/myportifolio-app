@@ -2,7 +2,7 @@ import { FormEvent, useRef, useState } from 'react';
 import emailjs, {EmailJSResponseStatus} from '@emailjs/browser';
 
 import { CaretRight, EnvelopeSimple, PaperPlaneTilt, WhatsappLogo } from "@phosphor-icons/react";
-import { BsLinkedin, BsWhatsapp } from "react-icons/bs";
+import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 import { Input } from "../../components/Input";
 import { Textarea } from "../../components/Textarea";
@@ -69,7 +69,7 @@ export function Contact() {
             </div>
 
             <div className="contact-card">
-              <BsWhatsapp />
+              <FaWhatsapp />
 
               <h3>Whatsapp</h3>
               <span>{'(81) 98342-3876'}</span>
@@ -85,7 +85,7 @@ export function Contact() {
             </div>
 
             <div className="contact-card">
-              <BsLinkedin />
+              <FaLinkedin />
 
               <h3>Linkedin</h3>
               <span>alisonsantosofc</span>

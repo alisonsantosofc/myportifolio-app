@@ -31,12 +31,6 @@ export const StyledContact = styled.section`
     flex-direction: column;
     align-items: center;
 
-    &:first-child {
-      > svg {
-        font-size: 3rem;
-      }
-    }
-
     > svg {
       font-size: 2.5rem;
       color: ${({theme}) => theme.colors.main500};

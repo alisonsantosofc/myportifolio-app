@@ -87,7 +87,7 @@ export const StyledHome = styled.section`
         margin-left: 4rem;
 
         .social-icon {
-          font-size: 1.8rem;
+          font-size: 2rem;
           color: ${({theme}) => theme.colors.main500};
           transition: .3s;
 
