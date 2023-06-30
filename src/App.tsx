@@ -1,6 +1,8 @@
 import { ThemeProvider } from "styled-components";
 
 import { Header } from "./components/Header";
+import { ScrollUp } from "./components/ScrollUp";
+
 import { Home } from "./views/Home";
 import { About } from "./views/About";
 import { Skills } from "./views/Skills";
@@ -30,8 +32,10 @@ export function App() {
         <Qualification />
         <Testimonials />
         <Contact />
-        <Footer />
       </main>
+
+      <Footer />
+      <ScrollUp />
 
       <GlobalStyles />
     </ThemeProvider>

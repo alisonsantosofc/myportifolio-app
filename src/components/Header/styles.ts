@@ -8,6 +8,10 @@ export const HeaderContainer = styled.header`
   z-index: var(--z-fixed);
   background-color: ${({theme}) => theme.colors.bodyBg};
 
+  &.scroll-header {
+    box-shadow: ${({theme}) => theme.effects.shadowBottom};
+  }
+
   nav {
     height: 4.5rem;
     display: flex;
@@ -36,16 +40,15 @@ export const HeaderContainer = styled.header`
           align-items: center;
           font-size: 0.9rem;
           color: ${({theme}) => theme.colors.text};
-          font-weight: 1.1rem;
+          font-weight: 600;
           transition: .3s; 
-
-          &.active {
-            font-weight: 700;
-            color: ${({theme}) => theme.colors.main300};
-          }
 
           &:hover {
             color: ${({theme}) => theme.effects.hoverLight(theme.colors.title)};
+          }
+
+          &.active {
+            color: ${({theme}) => theme.colors.main500};
           }
 
           svg {

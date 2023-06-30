@@ -34,6 +34,7 @@ export const lightTheme = {
   effects: {
     // shadows
     shadowTop: '0 -1px 4px rgba(0, 0, 0, 0.15)',
+    shadowBottom: '0 1px 4px rgba(0, 0, 0, 0.15)',
     shadowAround: '0px 0px 2px 2px rgba(0, 0, 0, 0.15)',
 
     // hover elements
@@ -80,6 +81,7 @@ export const darkTheme = {
   effects: {
     // shadows
     shadowTop: '0 -1px 4px rgba(60, 60, 60, 0.15)',
+    shadowBottom: '0 1px 4px rgba(60, 60, 60, 0.15)',
     shadowAround: '0px 0px 2px 2px rgba(60, 60, 60, 0.15)',
 
     // hover elements
