@@ -40,7 +40,7 @@ export const HeaderContainer = styled.header`
           align-items: center;
           font-size: 0.9rem;
           color: ${({theme}) => theme.colors.text};
-          font-weight: 600;
+          font-weight: 500;
           transition: .3s; 
 
           &:hover {

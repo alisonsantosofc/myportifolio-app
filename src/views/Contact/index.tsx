@@ -1,8 +1,9 @@
 import { FormEvent, useRef, useState } from 'react';
 import emailjs, {EmailJSResponseStatus} from '@emailjs/browser';
 
-import { CaretRight, EnvelopeSimple, PaperPlaneTilt, WhatsappLogo } from "@phosphor-icons/react";
+import { CaretRight, PaperPlaneTilt } from "@phosphor-icons/react";
 import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { MdMarkEmailRead } from "react-icons/md";
 
 import { Input } from "../../components/Input";
 import { Textarea } from "../../components/Textarea";
@@ -53,7 +54,7 @@ export function Contact() {
 
           <div className="contact-info">
             <div className="contact-card">
-              <EnvelopeSimple />
+              <MdMarkEmailRead />
 
               <h3>Email</h3>
               <span>alisonsantoso22@gmail.com</span>
