@@ -87,16 +87,18 @@ export const HeaderContainer = styled.header`
       .nav-menu {
         position: fixed;
         bottom: -100%;
-        left: 0;
+        right: 0;
         width: 100%;
         background-color: ${({theme}) => theme.colors.bodyBg};
         padding: 2.5rem 0 4rem;
         box-shadow: ${({theme}) => theme.effects.shadowTop};
         border-radius: 1.5rem 1.5rem 0 0;
-        transition: .3s;
+        transition: all 2s;
+        overflow: hidden;
 
         &.show {
           bottom: 0;
+          animation: menu_animate 1s ease-in-out .5s 1;
         }
 
         ul {
@@ -162,6 +164,16 @@ export const HeaderContainer = styled.header`
           column-gap: 0;
         }
       }
+    }
+  }
+
+  @keyframes menu_animate {
+    0% {
+      border-radius: 100% 1.5rem 0 0;
+    }
+
+    100% {
+      border-radius: 1.5rem 1.5rem 0 0;
     }
   }
 `;

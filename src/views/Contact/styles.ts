@@ -31,9 +31,9 @@ export const StyledContact = styled.section`
     flex-direction: column;
     align-items: center;
 
-    &:last-child {
+    &:first-child {
       > svg {
-        font-size: 2rem;
+        font-size: 3rem;
       }
     }
 
